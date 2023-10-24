@@ -1,9 +1,8 @@
-type Props = {
-  name?: string;
-};
+import { RouterProvider } from "react-router-dom";
+import router from "./router/router";
 
-const App = (props: Props) => {
-  return <div>"Hello World {props.name}"</div>;
+const App = () => {
+  return <RouterProvider router={router} />;
 };
 
 export default App;
